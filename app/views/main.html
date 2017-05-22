@@ -1,0 +1,40 @@
+<div class="container">
+  <div ng-controller="MainCtrl" class="row">
+    <!-- h1> Curam Components</h1-->
+    <div class="col-xs-7" ng-repeat="component in componentList">
+      <a ng-href="#!/component/{{component.slug}}">
+        <h1>{{component.value.title}}</h1>
+        <img src="{{component.value.icon}}" style="float:left; height: 60px; margin:4px; border:0.00em solid black"/>
+        <div ng-bind="component.value.description"></div>
+        <div><label>Team: </label><span ng-bind="component.value.team"></span></div>
+      </a>
+    </div>
+
+    <div class="cols-xs-1">
+      <span class="glyphicon glyphicon-menu-right" ng-show="closed" ng-click="closed=false"></span>
+      <span class="glyphicon glyphicon-menu-down" ng-hide="closed" ng-click="closed=true"></span>
+    </div>
+
+    <div class="cols-xs-4" ng-hide="closed">
+      <h2>Add</h2>
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control form-control-width-control" placeHolder="Enter Title" ng-keyup="validateTitle()" ng-model="component.title">
+      </div>
+      <div class="form-group">
+        <label>Team</label>
+        <select class="form-control form-control-width-control" ng-change="checkTeam()" placeHolder="Enter Team" ng-model="component.team">
+          <option value="-">-</option>
+          <option value="TI">TI</option>
+          <option value="CEF">CEF</option>
+          <option value="Solutions">Solutions</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input class="form-control form-control-width-control" ng-blur="checkDescription()" placeHolder="Enter Description" ng-model="component.description">
+      </div>
+      <button class="btn btn-info" ng-click="addComponent()">Add</button-->
+    </div>
+  </div>
+</div>

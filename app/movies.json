@@ -1,0 +1,30 @@
+[
+  {
+    "id":1,
+    "title": "CEFWidgets",
+    "team": "CEF",
+    "imagesrc":"/images/cefwidgets.jpeg",
+    "description": "Collection of Application Development UI widgets to support bespoke business requirements."
+  },
+  {
+    "id":2,
+    "title": "Verifications",
+    "team": "CEF",
+    "imagesrc":"/images/verifications.png",
+    "description": "Collection of Application Development UI widgets to support bespoke business requirements."
+  },
+  {
+    "id":3,
+    "title": "DynamicEvidence",
+    "team": "CEF",
+    "imagesrc":"/images/evidence.png",
+    "description": "Collection of Application Development UI widgets to support bespoke business requirements."
+  },
+  {
+    "id":4,
+    "title": "Core",
+    "team": "CEF",
+    "imagesrc":"/images/core.png",
+    "description": "Collection of Application Development UI widgets to support bespoke business requirements."
+  }
+]
